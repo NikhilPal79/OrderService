@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: Sep12O
+
+  datasource:
+    url: jdbc:h2:./appdb
+    password:
+    username: sa
+
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+
+eureka:
+  client:
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8087/eureka/
+    fetch-registry: true
+server:
+  port: 8089
